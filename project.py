@@ -8,6 +8,16 @@ kojeg smo iz komandne linije uzeli paramtetar za dimenziju kreiranja matrice """
 
 
 def kreiranjeMatrice(dimenzija):
+    """
+    Description:
+        Funkcija kreiranjeMatrice služi za kreiranje n-dimenzionalne matrice.
+
+    Args:
+        dimenzija (int): dimenzija n-dimenzionalne matrice (broj redaka, stupaca).
+
+    Returns:
+        matrica (np.int64): kreirana matrica tipa np.int64.
+    """
     matrica = np.random.randint(10, size=(dimenzija, dimenzija))
     return matrica
 
