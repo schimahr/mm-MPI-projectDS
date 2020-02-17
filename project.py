@@ -5,7 +5,7 @@ import sys
 """ import sistemske biblioteke sys zbog sys.exit() i sys.argv uz pomoć 
 kojeg smo iz komandne linije uzeli paramtetar za dimenziju kreiranja matrice """
 
-
+vrijemePocetka = time.time()
 
 def kreiranjeMatrice(dimenzija):
     """
@@ -99,8 +99,8 @@ elif rank==2:
 
 
 
-    time.sleep(2) # spavanje programa kako bi simulirali trajanje izračuna
     print("Rezultat množenja: \n", rezultat) # ispis rezultata množenja matrice
+    print("Trajanje programa: ", (time.time() - vrijemePocetka))
 
 
 else:
